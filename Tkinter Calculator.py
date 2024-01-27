@@ -4,7 +4,7 @@ root = Tk()
 root.title("Himel's Calculator")
 root.maxsize(230, 330)
 
-myEntry = Entry(root, bd=5, width=30)
+myEntry = Entry(root, bd=5, width=30, bg="Gray")
 myEntry.grid(row=0, column=0, columnspan=3, padx=10, pady=15)  # Span across three columns
 
 def buttonClick(number):
@@ -75,27 +75,27 @@ def buttonEqual():
         myEntry.insert(0, str(result))
 
 # Define buttons
-myButton7 = Button(root, text="7", padx=30, pady=10, command=lambda: buttonClick("7"))
-myButton8 = Button(root, text="8", padx=30, pady=10, command=lambda: buttonClick("8"))
-myButton9 = Button(root, text="9", padx=30, pady=10, command=lambda: buttonClick("9"))
-myButton4 = Button(root, text="4", padx=30, pady=10, command=lambda: buttonClick("4"))
-myButton5 = Button(root, text="5", padx=30, pady=10, command=lambda: buttonClick("5"))
-myButton6 = Button(root, text="6", padx=30, pady=10, command=lambda: buttonClick("6"))
-myButton1 = Button(root, text="1", padx=30, pady=10, command=lambda: buttonClick("1"))
-myButton2 = Button(root, text="2", padx=30, pady=10, command=lambda: buttonClick("2"))
-myButton3 = Button(root, text="3", padx=30, pady=10, command=lambda: buttonClick("3"))
+myButton7 = Button(root, text="7", padx=30, pady=10, bg="Gray", command=lambda: buttonClick("7"))
+myButton8 = Button(root, text="8", padx=30, pady=10, bg="Gray", command=lambda: buttonClick("8"))
+myButton9 = Button(root, text="9", padx=30, pady=10, bg="Gray", command=lambda: buttonClick("9"))
+myButton4 = Button(root, text="4", padx=30, pady=10, bg="Gray", command=lambda: buttonClick("4"))
+myButton5 = Button(root, text="5", padx=30, pady=10, bg="Gray", command=lambda: buttonClick("5"))
+myButton6 = Button(root, text="6", padx=30, pady=10, bg="Gray", command=lambda: buttonClick("6"))
+myButton1 = Button(root, text="1", padx=30, pady=10, bg="Gray", command=lambda: buttonClick("1"))
+myButton2 = Button(root, text="2", padx=30, pady=10, bg="Gray", command=lambda: buttonClick("2"))
+myButton3 = Button(root, text="3", padx=30, pady=10, bg="Gray", command=lambda: buttonClick("3"))
 
-myButtonADD = Button(root, text="+", padx=29, pady=10, command=buttonADD)
-myButtonSub = Button(root, text="-", padx=31, pady=10, command=buttonSub)
-myButtonMul = Button(root, text="*", padx=30.5, pady=10, command=buttonMul)
+myButtonADD = Button(root, text="+", padx=29, pady=10, bg="Gray", command=buttonADD)
+myButtonSub = Button(root, text="-", padx=31, pady=10, bg="Gray", command=buttonSub)
+myButtonMul = Button(root, text="*", padx=30.5, pady=10, bg="Gray", command=buttonMul)
 
-myButtonDiv = Button(root, text="/", padx=31, pady=10, command=buttonDiv)
-myButtonPercentage = Button(root, text="%", padx=29, pady=10, command=buttonPercentage)
-myButtonPoint = Button(root, text=".", padx=30.5, pady=10, command=buttonPoint)
+myButtonDiv = Button(root, text="/", padx=31, pady=10, bg="Gray", command=buttonDiv)
+myButtonPercentage = Button(root, text="%", padx=29, pady=10, bg="Gray", command=buttonPercentage)
+myButtonPoint = Button(root, text=".", padx=30.5, pady=10, bg="Gray", command=buttonPoint)
 
-myButton0 = Button(root, text="0", padx=30, pady=10, command=lambda: buttonClick("0"))
-myButtonC = Button(root, text="C", padx=29, pady=10, command=buttonClear)
-myButtonE = Button(root, text="=", padx=29, pady=10, command=buttonEqual)
+myButton0 = Button(root, text="0", padx=30, pady=10, bg="Gray", command=lambda: buttonClick("0"))
+myButtonC = Button(root, text="C", padx=29, pady=10, bg="Gray", command=buttonClear)
+myButtonE = Button(root, text="=", padx=29, pady=10, bg="Gray", command=buttonEqual)
 
 # Add buttons to the grid
 myButton7.grid(row=1, column=0)
@@ -121,6 +121,7 @@ myButtonC.grid(row=6, column=1)
 myButtonE.grid(row=6, column=2)
 
 root.mainloop()
+
 
 #Himel Sarder
 #Dept. of CSE, BSFMSTU
