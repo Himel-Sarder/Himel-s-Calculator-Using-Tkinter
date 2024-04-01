@@ -25,4 +25,7 @@ Welcome to my latest project – a powerful calculator built using Python's Tkin
 ### Let's Celebrate the Magic of Coding!
 As a passionate Python enthusiast, I thoroughly enjoyed crafting this project and am excited to share it with you. Together, let's celebrate the magic of coding and explore the endless possibilities of software development. Feel free to check out the project on GitHub and contribute to its development!
 
+### LICENSE
+This project is licensed under the MIT License -[LICENSE](https://chat.openai.com/c/LICENSE) see the  file for details.
+
 Happy Calculating! 💻✨
